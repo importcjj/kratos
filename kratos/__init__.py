@@ -12,4 +12,4 @@ def ping():
 
 @app.route('/whoami')
 def whoami():
-    return 'Kratos'
+    return '<h1>Kratos</h1>'
