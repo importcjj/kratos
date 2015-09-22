@@ -64,3 +64,6 @@ html/
 
 #log
 log/
+
+#prod_configure
+prod_conf.py
