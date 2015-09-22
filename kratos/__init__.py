@@ -2,18 +2,13 @@
 
 import flask
 from flask import Flask
+import logging
+from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
-
-
-@app.route('/ping')
-def ping():
-    return 'pong!'
-
-
-@app.route('/whoami')
-def whoami():
-    return '<h1>Kratos</h1>'
+filehandler = RotatingFileHandler('log/kratos.log', mode='a')
+filehandler.setLevel(logging.NOTSET)
+app.logger.addHandler(filehandler)
 
 
 @app.errorhandler(404)

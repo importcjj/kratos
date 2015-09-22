@@ -61,3 +61,6 @@ uwsgi.ini
 
 #html
 html/
+
+#log
+log/
