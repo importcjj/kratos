@@ -58,3 +58,6 @@ target/
 
 # Uwsgi
 uwsgi.ini
+
+#html
+html/
