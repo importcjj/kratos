@@ -17,5 +17,5 @@ def whoami():
 
 
 @app.errorhandler(404)
-def page_not_found():
+def page_not_found(error):
     return flask.render_template('404.html')
