@@ -6,7 +6,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
-filehandler = RotatingFileHandler('log/kratos.log', mode='a')
+filehandler = RotatingFileHandler('kratos.log', mode='a')
 filehandler.setLevel(logging.NOTSET)
 app.logger.addHandler(filehandler)
 
